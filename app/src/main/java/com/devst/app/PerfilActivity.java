@@ -38,10 +38,10 @@ public class PerfilActivity extends AppCompatActivity {
         tvNombreUsuario.setText(nombre != null ? nombre : "Nombre no disponible");
         tvCorreo.setText(correo != null ? correo : "Correo no disponible");
 
-        // Es una mala práctica pasar la contraseña, pero si es para un ejercicio de aprendizaje, así se haría.
+        // Es una mala práctica pasar la contraseña como texto.
         // Lo ideal es mostrar asteriscos.
         if (contrasena != null) {
-            tvContrasena.setText("************"); // Opción segura y recomendada
+            tvContrasena.setText("************");
         } else {
             tvContrasena.setText("");
         }
